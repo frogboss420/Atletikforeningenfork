@@ -1,0 +1,60 @@
+{
+   "data": [
+      {
+         "Medlemsnummer": 1,
+         "Navn": "Margi Loughnan",
+         "Fødselsdag": "1986-02-16",
+         "Kontingent": 200,
+         "id": 124480644414263740
+      },
+      {
+         "Medlemsnummer": 2,
+         "Navn": "Morse Drepp",
+         "Fødselsdag": "1992-08-23",
+         "Kontingent": 100,
+         "id": 113448077590183386
+      },
+      {
+         "Medlemsnummer": 3,
+         "Navn": "Jilli Catenot",
+         "Fødselsdag": "1948-11-01",
+         "Kontingent": 150,
+         "id": 961324718698138059
+      },
+      {
+         "Medlemsnummer": 4,
+         "Navn": "Terza Pozzo",
+         "Fødselsdag": "1956-03-22",
+         "Kontingent": 75,
+         "id": 173187145202346680
+      },
+      {
+         "Medlemsnummer": 5,
+         "Navn": "Foss Handrok",
+         "Fødselsdag": "2018-06-23",
+         "Kontingent": 50,
+         "id": 222825693766418342
+      },
+      {
+         "Medlemsnummer": 6,
+         "Navn": "Zebulen Ticic",
+         "Fødselsdag": "1983-05-08",
+         "Kontingent": 100,
+         "id": 537419720253579584
+      },
+      {
+         "Medlemsnummer": 7,
+         "Navn": "Ellie Fowden",
+         "Fødselsdag": "2014-09-20",
+         "Kontingent": 50,
+         "id": 215466577372450912
+      },
+      {
+         "Medlemsnummer": 8,
+         "Navn": "Isahella Sighard",
+         "Fødselsdag": "1981-05-06",
+         "Kontingent": 200,
+         "id": 817678192202205722
+      }
+   ]
+}

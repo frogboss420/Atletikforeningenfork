@@ -1,0 +1,64 @@
+{
+   "data": [
+      {
+         "Medlem": 1,
+         "Disciplin": "Spydkast",
+         "Træner": false,
+         "id": 220588764124654813
+      },
+      {
+         "Medlem": 1,
+         "Disciplin": "Motionsløb",
+         "Træner": false,
+         "id": 236571768000802128
+      },
+      {
+         "Medlem": 2,
+         "Disciplin": "Spydkast",
+         "Træner": true,
+         "id": 261081516131536176
+      },
+      {
+         "Medlem": 3,
+         "Disciplin": "Motionsløb",
+         "Træner": false,
+         "id": 613873777747904269
+      },
+      {
+         "Medlem": 4,
+         "Disciplin": "Motionsløb",
+         "Træner": true,
+         "id": 309726606744084162
+      },
+      {
+         "Medlem": 5,
+         "Disciplin": "Børnehold",
+         "Træner": false,
+         "id": 283615739574070091
+      },
+      {
+         "Medlem": 6,
+         "Disciplin": "Børnehold",
+         "Træner": true,
+         "id": 228699958280479918
+      },
+      {
+         "Medlem": 6,
+         "Disciplin": "Spydkast",
+         "Træner": false,
+         "id": 139598720511262794
+      },
+      {
+         "Medlem": 7,
+         "Disciplin": "Børnehold",
+         "Træner": false,
+         "id": 123483108481453043
+      },
+      {
+         "Medlem": 8,
+         "Disciplin": "Motionsløb",
+         "Træner": false,
+         "id": 251802537608230319
+      }
+   ]
+}
