@@ -3,7 +3,7 @@ from pysondb import db
 medlemmer = db.getDb('medlemmer.json')
 tilmeldinger = db.getDb('tilmeldinger.json')
 
-# Denne funktion genererer en string ud fra en tabel i pysonDB-format i mere overskueligt format
+# Denne funktion genererer en string ud fra en tabel i pysonDB-format i mere læsbart format
 def table_to_text(table):
     out = ''
     for row in table:
@@ -29,25 +29,5 @@ def add_participant(member_id, discipline, is_coach):
     pass
 
 
-if __name__ == '__main__':
-    print(table_to_text(medlemmer.getAll()))
-    print(table_to_text(tilmeldinger.getAll()))
-
-    ## Test af løsning på opgaver ##
-
-    # Find og print discipliner
-    hold = find_unique_teams()
-    print(hold)
-
-    # Print holdlister
-    for h in hold:
-        print(h)
-        print(generate_team_list(h))
-
-    # Tilføj medlemmer
-    add_member('Alidia McGoon', '1950-10-17', 150)
-    add_member('Osgood Tollet', '1979-09-30', 200)
-
-    # Meld medlemmer på disciplin
-    add_participant(9, 'Kapgang', True)
-    add_participant(10, 'Kapgang', False)
+print(table_to_text(medlemmer.getAll()))
+print(table_to_text(tilmeldinger.getAll()))
