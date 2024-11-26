@@ -59,6 +59,18 @@
          "Disciplin": "Motionsløb",
          "Træner": false,
          "id": 251802537608230319
+      },
+      {
+         "Medlem": 9,
+         "Disciplin": "Kapgang",
+         "Træner": true,
+         "id": 124430781828776232
+      },
+      {
+         "Medlem": 10,
+         "Disciplin": "Kapgang",
+         "Træner": false,
+         "id": 113390293601404326
       }
    ]
 }

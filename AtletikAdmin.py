@@ -1,3 +1,5 @@
+from operator import truediv
+
 from pysondb import db
 
 medlemmer = db.getDb('medlemmer.json')
@@ -14,19 +16,53 @@ def table_to_text(table):
 
 # Denne funktion returnerer en liste af hold fra tabellen 'Tilmeldinger' uden dubletter
 def find_unique_teams():
-    pass
+    data = tilmeldinger.getAll()
+    disc = []
+    for row in data:
+        if row['Disciplin'] not in disc:
+            disc.append(row['Disciplin'])
+    return disc
 
 # Denne funktion returnerer en liste af navne, som har en tilmelding på den valgte disciplin
 def generate_team_list(discipline):
-    pass
+    #dataTilmeldinger = tilmeldinger.getAll()
+    #dataMedlemmer = medlemmer.getAll()
+    #medlemmerId = []
+    #out = []
+    #for i in dataTilmeldinger:
+    #    if i['Disciplin'] == discipline:
+    #        medlemmerId.append(i['Medlem'])
+    #for i in dataMedlemmer:
+    #    if i['Medlemsnummer'] in medlemmerId:
+    #        out.append(i['Navn'])
+    #return out
+    t=tilmeldinger.getBy({'Disciplin':discipline})
+    team_list=[]
+    for row in t:
+        m=medlemmer.getBy({'Medlemsnummer':row['Medlem']})
+        team_list.append(m[0]['Navn'])
+    return team_list
 
 # Denne funktion tilføjer et medlem til tabellen 'Medlemmer'
 def add_member(name, birthdate, fee):
-    pass
+    nummer=len(medlemmer.getAll())+1
+    found = False
+    for medlem in medlemmer.getAll():
+        if medlem['Navn'] == name and medlem['Fødselsdag']==birthdate and medlem['Kontingent']==fee:
+            found = True
+            break
+    if not found:
+        medlemmer.add({'Medlemsnummer':nummer, 'Navn':name, 'Fødselsdag':birthdate, 'Kontingent': fee})
 
 # Denne funktion tilføjer en tilmelding til tabellen 'Tilmeldinger'
 def add_participant(member_id, discipline, is_coach):
-    pass
+    found = False
+    for entry in tilmeldinger.getAll():
+        if entry['Medlem']==member_id and entry['Disciplin']==discipline:
+            found = True
+            break
+    if not found:
+        tilmeldinger.add({'Medlem':member_id,'Disciplin':discipline,'Træner':is_coach})
 
 
 if __name__ == '__main__':
