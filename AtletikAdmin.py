@@ -64,6 +64,13 @@ def add_participant(member_id, discipline, is_coach):
     if not found:
         tilmeldinger.add({'Medlem':member_id,'Disciplin':discipline,'Træner':is_coach})
 
+# Denne funktion skifter et medlems "Coach" status
+def modifyMember(member_id):
+    for entry in tilmeldinger.getAll()
+        if entry['id'] == member_id:
+            tilmeldinger.update({'Træner':false,'Disciplin':''}, {})
+
+
 
 if __name__ == '__main__':
     print(table_to_text(medlemmer.getAll()))
